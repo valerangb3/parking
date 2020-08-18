@@ -38,22 +38,19 @@
     </v-app-bar>
 
     <v-main>
-      <!-- <HelloWorld/> -->
-      <PlaceList/>
+      <HelloWorld/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld';
-import PlaceList from './components/PlaceList';
+import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
 
   components: {
-    // HelloWorld,
-    PlaceList,
+    HelloWorld,
   },
 
   data: () => ({
