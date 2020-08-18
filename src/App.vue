@@ -38,19 +38,36 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <!-- <HelloWorld/> -->
+      <Test>
+        <template v-slot:activator="{ on, otherSlotPropName }">
+            <v-btn
+              color="red lighten-2"
+              dark
+              v-on="on"
+              v-bind="otherSlotPropName"
+            >
+              Click Me
+            </v-btn>
+          </template>
+      </Test>
+      <PlaceList/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
+import PlaceList from './components/PlaceList';
+import Test from './components/test';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    // HelloWorld,
+    PlaceList,
+    Test,
   },
 
   data: () => ({
